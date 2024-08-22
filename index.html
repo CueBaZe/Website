@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oliver Valente</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="#" class="logo">Oliver <span>Valente</span></a>
+            <a href="https://www.facebook.com/profile.php?id=100006728116669"><img src="image/facebook.png" class="facebook" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/oliver_valente_/"><img src="image/instagram.png" class="instagram" alt="Instagram icon"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="nav__link active">portfolio</a>
+            <a href="#mig" class="nav__link">Om mig</a>
+            <a href="#projekter" class="nav__link">projekter</a>
+            <a href="#uddannelse" class="nav__link">Uddannelse</a>
+        </nav>
+
+        <a href="mailto:olivervalente@icloud.com" class="kontakt">Kontakt mig</a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hej</h3>
+
+            <h1>Mit navn er <span>Oliver</span> Valente</h1>
+            <p>Jeg synes, programmering er spændende og jeg har også lidt erfaring indenfor faget. Det er fedt, fordi jeg kan være kreativ på grund af de mange muligheder, der er indenfor programmering. Jeg elsker at lære nyt og er meget nysgerrig. Jeg er en stille person når det kommer til fremmede mennesker, men når jeg lærer nogen at kende, er jeg ikke så stille. Jeg er glad for at gå på uddannelsen og ser frem til at komme i lære. </p>
+        </div>
+
+        <div class="btn-box">
+            <a href="mailto:olivervalente@icloud.com" class="btn-1">Kontakt mig</a>
+            <a href="CV.pdf" download="CV.pdf" type="application/pdf" class="btn-2">Download CV</a>
+        </div>
+        <div class="img-box">
+            <img src="image/mig.jpg" alt="Oliver">
+        </div>
+    </section>
+
+    <section class="om-mig" id="mig">
+        <h3>Om <span>mig</span></h3>
+        <p class="om-mig-text">Mit navn er Oliver jeg er 18 år gammel. Lige nu er jeg igang med at udanne mig til Datatekniker med spicale i programmering.
+            i min fritid kan jeg godt lide at spille computer og at være sammen med min famillie. Som person er jeg en stille og rolig og nok lidt genert ung mand. 
+            Jeg har masser af gåpåmod og er nysger-rige for at lære. Jeg er engageret i programmering og lægger meget energi i at løse de opgaver, jeg bliver stillet. 
+        </p>
+    </section>
+
+    <section class="projekter" id="projekter">
+        <h3>Pro<span>jekter</span></h3>
+
+        <div class="projekter-container">
+            <div class="projekt activated"  id="1">
+                <h4>Automatic file sorting system</h4>
+                <img src="image/Automatic-file.png" alt="Projekt 1" class="projekt-img">
+                <p>Det er et python script der sortere filer i en mappe efter filtypen. Det virker på den måde at når man downloader en file så tjekker den filltypen og sætter den ind i den mappe der har samme filtype. Det gør at det er nemmere at finde det man leder efter.</p>
+                <br>
+                <a href="https://github.com/CueBaZe/Automatic-file-sorter" class="btn-projekt">Se Projekt</a>
+            </div>
+
+            <div class="projekt deactivated" id="2">
+                <h4>Simple Paint</h4>
+                <img src="image/simple paint.png" alt="Projekt 2" class="projekt-img">
+                <p>Det er en simple version af paint, som jeg har lavet med HTML, CSS og Javascript. Man kan bruge hjemmesiden til at lave tegninger som man kan gemme som png.</p>
+                <br>
+                <a href="https://github.com/CueBaZe/Simple-paint" class="btn-projekt">Se Projekt</a>
+            </div>
+
+            <div class="projekt deactivated" id="3">
+                <h4>Sten, Saks, Papir</h4>
+                <img src="image/stensakspapir.png" alt="Projekt 2" class="projekt-img">
+                <p>Det er en hjemmeside hvor man kan spille sten, saks, papir mod en computer. Jeg har lavet det med HTML, CSS og Javascript. Man kan bruge denne hjemmeside når man sidder og keder sig og virkelig ikke har andet og lave.</p>
+                <br>
+                <a href="https://github.com/CueBaZe/Rock-Paper-Scissors" class="btn-projekt">Se Projekt</a>
+            </div>
+        </div>
+
+        <a onclick="left()" class="left" id="side-btn"><</a>
+        <a onclick="right()" class="right" id="side-btn">></a>
+    </section>
+
+    <section class="uddannelse" id="uddannelse">
+        <h3>Uddan<span>nelse</span></h3>
+        <p>Jeg er i gang med at uddanne mig til datatekniker med speciale i programmering. Jeg forventer at afslutte min uddannelse i 2028 og er i øjeblikket ansat i skolepraktik.</p>
+    </section>
+
+
+
+
+</body>
+<script src="javascript.js"></script>
+</html>
