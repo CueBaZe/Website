@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px;
+    background: rgba(0, 0, 0, 0.797);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+    justify-items: center;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.logo:hover {
+    color: orange;
+    text-shadow: 0 0 25px orange,
+                0 0 50px orange;
+    transform: scale(1.1);
+}
+span {
+    color: orange;
+}
+
+.facebook {
+    width: 40px;
+    position: absolute;
+    margin: 8px;
+    margin-top: -18px;
+    animation: FadeIn 1s ease-in-out forwards;
+    transition: 0.3s ease;
+}
+
+.facebook:hover {
+    transform: scale(1.1);
+}
+
+.instagram {
+    width: 42px;
+    position: absolute;
+    margin: 50px;
+    margin-top: -14px;
+    animation: FadeIn 1s ease-in-out forwards;
+    transition: 0.3s ease;
+}
+
+.instagram:hover {
+    transform: scale(1.1);
+}
+
+.github {
+    width: 36px;
+    position: absolute;
+    margin: 96px;
+    margin-top: -17px;
+    animation: FadeIn 1s ease-in-out forwards;
+    transition: 0.3s ease;
+}
+
+.github:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.navbar a{
+    font-size: 18px;
+    color: white; 
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: orange;
+    border-bottom: 3px solid orange;
+
+}
+
+.kontakt {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.kontakt:hover {
+    background-color: orange;
+    box-shadow: 0 0 25px orange;
+    color: white;
+    transform: scale(1.1);
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(32, 31, 31);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12%;
+}
+
+.home-content {
+    max-width: 1000px;
+
+}
+
+.home-content h3{
+    font-size: 80px;
+    color: white;
+    margin-top: 50px;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.home-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: white    ;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+    margin-top: 150px;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border:  2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: orange;
+    color: white;
+    border:  2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover {
+    background-color: white;
+    color: orange;
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 300px;
+    margin-top: 80px;
+    background-color: rgb(198, 198, 198);
+    padding: 2px;
+    animation: FadeIn 1s ease-in-out forwards;
+
+}
+
+.om-mig {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(32, 31, 31);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12%; 
+}
+
+.om-mig h3 {
+    font-size: 80px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+
+.om-mig p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+    background-color: rgb(37, 37, 37);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.projekter {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 12%;
+    position: relative; 
+}
+
+.projekter h3 {
+    font-size: 80px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+.projekter-container {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    max-width: 70%;
+    margin: 15px;
+    animation: FadeIn 1s ease-in-out forwards;
+    position: relative; 
+    width: 100%; 
+}
+.projekter-container h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.projekter-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.projekt-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: rgb(198, 198, 198);
+    padding: 2px;
+}
+.btn-projekt {
+    padding: 15px 28px;
+    background-color: orange;
+    color: white;
+    border:  2px solid transparent;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.btn-projekt:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid rgb(255, 255, 255);
+}
+.activated {
+    display: block;
+}
+.deactivated {
+    display: none;
+}
+
+#side-btn {
+    font-size: 20px;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
+    transition: 0.3s ease;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+#side-btn:hover {
+    color: black;
+    background-color: white;
+}
+#side-btn.left {
+    left: 10px;
+}
+#side-btn.right {
+    right: 10px; 
+}
+
+.uddannelse {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 12%;
+}
+
+.uddannelse h3 {
+    font-size: 50px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.uddannelse p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+    background-color: rgb(37, 37, 37);
+    padding: 30px;
+    border-radius: 10px;    
+}
+
+.kontaktmig {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 12%;
+}
+
+.kontaktmig h3 {
+    font-size: 50px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.kontaktmig label {
+    font-size: 20px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;  
+}
+
+.kontaktmig p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: white;
+    animation: FadeIn 1s ease-in-out forwards;
+    background-color: rgb(37, 37, 37);
+    padding: 30px;
+    border-radius: 10px;    
+}
+
+.kontakt,
+.btn-1,
+.btn-2,
+.left,
+.right,
+.navbar a,
+.logo-container a {
+    text-decoration: none !important;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .home, .om-mig, .projekter, .uddannelse {
+    flex-direction: column;
+    gap: 3em;
+    padding: 30px 5%;
+  }
+
+  .home-content, .projekter-container {
+    max-width: 100%;
+  }
+
+  .img-box img {
+    margin-top: 30px;
+  }
+
+  .btn-box {
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .projekter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projekt-img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .header {
+    padding: 5px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar a {
+    margin: 10px;
+  }
+
+  .kontakt {
+    display: none;
+  }
+
+  .home-content h3, .om-mig h3, .projekter h3, .uddannelse h3 {
+    font-size: 40px;
+  }
+
+  .home-content h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-content h3, .om-mig h3, .projekter h3, .uddannelse h3 {
+    font-size: 30px;
+    margin-top: 200px;
+  }
+
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-1, .btn-2 {
+    width: 100%;
+    max-width: 250px;
+  }
+}
