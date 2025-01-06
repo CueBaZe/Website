@@ -65,6 +65,19 @@ function moveSlide() {
     });
 }
 
+var number1;
+var number2;
+
+function makeCaptchaNumbers() {
+    const captchaItem = document.getElementById('captcha');
+
+
+    number1 = Math.floor(Math.random() * 10);
+    number2 = Math.floor(Math.random() * 10);
+
+    captchaItem.placeholder = "Hvad er " + number1 + " " + "+ " + number2 + "?";
+}
+
 document.getElementById("submitbtn").addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -88,10 +101,9 @@ document.getElementById("submitbtn").addEventListener('click', function (event) 
         return;
     }
 
-    if (parseInt(captchaInput) !== 9) {
+    if (parseInt(captchaInput) !== number1 + number2) {
         alert("Captcha er forkert prøv igen");
     } else {
-        alert("Captcha korrekt sender mail");
         event.target.form.submit();
     }
 }) 
