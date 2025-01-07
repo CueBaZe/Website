@@ -469,7 +469,7 @@ span {
 }
 
 @media screen and (max-width: 600px) {
-  .home-content h3, .om-mig h3, .projekter h3, .uddannelse h3 {
+  .home-content h3, .om-mig h3, .projekter h3, .uddannelse h3, .kontaktmig h3 {
     font-size: 30px;
     margin-top: 100px;
   }
@@ -500,7 +500,7 @@ span {
 }
 
 @media screen and (max-width: 400px) {
-    .home-content h3, .om-mig h3, .projekter h3, .uddannelse h3 {
+    .home-content h3, .om-mig h3, .projekter h3, .uddannelse h3, .kontaktmig h3 {
       font-size: 30px;
       margin-top: 100px;
     }
