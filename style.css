@@ -482,6 +482,16 @@ span {
     margin-top: 200px;
   }
 
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar a {
+    margin: 10px;
+  }
+
   .home-content h1 {
     font-size: 24px;
   }
