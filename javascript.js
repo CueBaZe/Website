@@ -24,18 +24,15 @@ let onNumber = 1;
 
 projekter.forEach(projekt => {
     count++;
-    console.log(count);
 });
 
 
 function right() {
     if (onNumber < count) {
         onNumber++;
-        console.log(onNumber);
     }
     else {
         onNumber = 1;
-        console.log(onNumber);
     }
     moveSlide();
 }
