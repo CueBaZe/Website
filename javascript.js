@@ -40,11 +40,9 @@ function right() {
 function left() {
     if (onNumber > 1) {
         onNumber--;
-        console.log(onNumber);
     }
     else {
         onNumber = count;
-        console.log(onNumber);
     }
     moveSlide();
 }
