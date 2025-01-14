@@ -303,7 +303,6 @@ span {
 
 .btn-github {
     padding: 15px 28px;
-    margin: 40px;
     background-color: black;
     color: white;
     border:  2px solid transparent;
@@ -508,6 +507,15 @@ span {
     align-items: center;
   }
 
+  .btn-github, .btn-projekt {
+    width: 100%;
+    max-width: 250px; /* Prevent the button from becoming too wide */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Reduce font size slightly */
+    text-align: center; /* Center-align the button text */
+    margin: 20px auto; /* Add space above and below, center horizontally */
+  }
+
   .btn-1, .btn-2 {
     width: 100%;
     max-width: 250px;
@@ -538,6 +546,13 @@ span {
       flex-direction: column;
       align-items: center;
     }
+
+    .btn-github, .btn-projekt {
+        max-width: 200px; /* Reduce max width further */
+        padding: 8px 16px; /* Adjust padding for tighter screens */
+        font-size: 14px; /* Smaller font size for compact layout */
+        margin: 15px auto; /* Maintain consistent spacing */
+      }
   
     .btn-1, .btn-2 {
       width: 100%;
