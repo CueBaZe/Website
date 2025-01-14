@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ssp_style.css">
+    <title>Sten, Saks eller Papir</title>
+</head>
+<body>
+    
+    <h1>Sten, Saks eller Papir</h1>
+
+    <div class="button-container">
+        <button id="sten" class="button" onclick="playgame('sten')">🤜</button>
+        <button id="saks" class="button" onclick="playgame('saks')">✌️</button>
+        <button id="papir" class="button" onclick="playgame('papir')">🫱</button>
+    </div>  
+
+    <div id="playerDisplay">Player: </div>
+    <div id="computerDisplay">Computer: </div>
+    <div id="resualtDisplay"></div>
+
+    <div class="score-box">
+        <div id="playerScore">Player: <span id="playerNumber">0</span></div>
+        <div id="ComputerScore">Computer: <span id="computerNumber">0</span></div>
+    </div>
+
+        <a href="/home/index.html" id="back">Tilbage</a>
+</body>
+<script src="ssp_script.js"></script>
+</html>
