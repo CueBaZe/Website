@@ -107,25 +107,6 @@ p {
     transform: scale(1.1);
 }
 
-#back {
-    color: white;
-    background-color: red;
-    padding: 10px;
-    width: 45%;
-    border-radius: 10px;
-    margin: 10px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    position: relative;
-    top: 100px;
-
-}
-
-#back:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
-}
 
 .active {
     transform: scale(1.1);
