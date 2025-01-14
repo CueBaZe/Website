@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(7, 197, 204);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(63, 152, 160);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+h3 {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+#tool-box {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(63, 152, 160);
+    left: 0;
+    top: 15%;
+    bottom: 0;
+    display: flex;
+    padding: 10px;
+    width: 7%;
+    color: whitesmoke;
+}
+
+p {
+    margin: 10px;
+}
+
+#width-Selector {
+    width: 95%;
+}
+
+#pencil {
+    background-color: black;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#pencil:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+#eraser {
+    background-color: black;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#eraser:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+#clear {
+    background-color: black;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    top: 100px;
+
+}
+
+#clear:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+#save {
+    background-color: black;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    top: 90px;
+}
+#save:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+#back {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    width: 45%;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    top: 100px;
+
+}
+
+#back:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.active {
+    transform: scale(1.1);
+}
+
+span {
+    color: rgb(7, 197, 204);
+}
+
+#drawing-board {
+    position: absolute;
+    background-color: rgb(255, 238, 238);
+    top: 59%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 80vh;
+    z-index: 1;
+    box-shadow: 3px 3px rgb(239, 237, 237);
+}

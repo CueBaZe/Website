@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paint_style.css">
+    <title>Paint</title>
+</head>
+<body>
+    <header class="header">
+        <h3 class="logo">Simple <span>Paint</span></h3>
+    </header>
+
+    <div id="tool-box">
+        <p>Skift farve:</p>
+        <input type="color" id="color-Selector">
+        <br>
+        <p>Baggrund:</p>
+        <input type="color" value="#FFFFFF" id="background-Selector">
+        <br>
+        <p>Størelse:</p>
+        <input type="range" min="1" max="50" id="width-Selector">
+        <br>
+        <a onclick="activatePen()" id="pencil" class="active" title="Blyant">✏️</a>
+        <a onclick="activateEraser()" id="eraser" class="" title="Viskelæder">🧽</a>
+        <br>
+        <a onclick="clearBoard()" id="clear" title="Slet alt">🗑️</a>
+        <a id="save" title="Gem image">💾</a>
+        <br>
+        <a href="/home/index.html" id="back">Tilbage</a>
+    </div>
+
+    <canvas id="drawing-board">
+    </canvas>
+
+</body>
+
+<script src="paint.js"></script>
+</html>
