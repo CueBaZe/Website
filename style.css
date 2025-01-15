@@ -281,7 +281,7 @@ span {
 }
 .projekt-img {
     width: 50%;
-    height: auto;
+    max-height: 200px;
     border-radius: 10px;
     margin: 15px;
     background-color: rgb(198, 198, 198);
