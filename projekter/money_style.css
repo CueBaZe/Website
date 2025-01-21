@@ -1,0 +1,92 @@
+.sellButton {
+    font-size: 15px;
+    background-color: rgb(255, 25, 25); 
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.sellButton:hover {
+    background-color: rgb(209, 0, 0);
+    transform: scale(1.1);
+}
+
+.buyButton {
+    font-size: 15px;
+    background-color: rgb(47, 211, 140);
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.buyButton:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+.disabledButton {
+    font-size: 15px;
+    background-color: rgb(156, 156, 156);
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+
+.disabledButton:hover {
+    background-color: rgb(156, 156, 156);
+    cursor: not-allowed; 
+    transform: none; 
+    outline: none;
+    border: none;
+}
+
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+.money {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(47, 211, 140);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.amount {
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    height: 300px;
+}
+
+.card img {
+    height: 150px; 
+    width: 150px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px; /* Add space between cards on small screens */
+    }
+    .card-body h4 {
+        font-size: 1.1rem; /* Slightly smaller title text */
+    }
+    .sellButton, .buyButton {
+        font-size: 0.8rem; /* Adjust button size */
+    }
+}
