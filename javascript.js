@@ -1,8 +1,8 @@
-window.onload = () => {
-    const sections = document.querySelectorAll("section"); // Select all sections
-    const navLinks = document.querySelectorAll(".navbar-nav .nav-link"); // Select all nav links
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-    let offsetBuffer = 150; // Adjust the scroll offset buffer as needed
+    let offsetBuffer = 150; // Adjust for fixed navbar height
 
     window.onscroll = () => {
         let top = window.scrollY;
@@ -13,12 +13,8 @@ window.onload = () => {
             let id = section.getAttribute("id");
 
             if (top + offsetBuffer >= offset && top + offsetBuffer < offset + height) {
-                // Remove 'active' from all nav links
-                navLinks.forEach((link) => {
-                    link.classList.remove("active");
-                });
+                navLinks.forEach((link) => link.classList.remove("active"));
 
-                // Add 'active' to the corresponding nav link
                 const activeLink = document.querySelector(`.navbar-nav .nav-link[href="#${id}"]`);
                 if (activeLink) {
                     activeLink.classList.add("active");
@@ -26,7 +22,8 @@ window.onload = () => {
             }
         });
     };
-};
+});
+
 
 
 let projekter = document.querySelectorAll(".projekt");
