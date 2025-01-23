@@ -62,6 +62,26 @@ html {
     border-bottom: 3px solid orange;
 }
 
+.foter {
+  background-color: #111111; /* Dark background */
+  font-size: 30px;
+  text-align: center; /* Center aligns everything in the footer */
+}
+
+.foter img {
+  width: 50px; /* Explicit width */
+  height: 50px; /* Explicit height for uniformity */
+  margin: 10px; /* Adds spacing between icons */
+  object-fit: contain; /* Ensures proper aspect ratio */
+  display: inline-block; /* Ensures proper alignment */
+  transition: ease 1;
+}
+
+.foter img:hover {
+  scale: 1.2;
+}
+
+
 .home {
     width: 100%;
     min-height: 100vh;
